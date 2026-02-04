@@ -97,7 +97,7 @@
         </div>
         <div id="about">
             <h2>About</h2>
-            <p>I am a lecturer in Computer Science (assistant professor) at the University of St Andrews. I research on computer network and system design with a strong focus from the application's perspective. My main interests include data storage systems, networking, scientific computing/HPC, and emerging AI applications. Before joining St Andrews, I was a senior researcher at the computing infrastructure group (led by Prof. Noa Zilberman) at the University of Oxford. Earlier, I was a research associate at the Network and Operating Systems Lab (led by Dr Michio Honda, Reader) at the University of Edinburgh. I hold a PhD in Computer Science from the KTH Royal Institute of Technology, Stockholm, Sweden.</p>
+            <p>I am a lecturer in Computer Science (assistant professor) at the University of St Andrews. I work on computer networks and system design with a strong focus from the application's perspective. My main interests include data storage systems, networking, scientific computing/HPC, and emerging AI applications. Before joining St Andrews, I was a senior researcher at the computing infrastructure group (led by Prof. Noa Zilberman) at the University of Oxford. Earlier, I was a research associate at the Network and Operating Systems Lab (led by Dr Michio Honda, Reader) at the University of Edinburgh. I hold a PhD in Computer Science from the KTH Royal Institute of Technology, Stockholm, Sweden.</p>
         </div>
         <hr>
         <div id="publications">
@@ -222,21 +222,25 @@
         <div id="talks">
             <h2>Talks</h2>
             <div class="csl-bib-body">
+                ParaLog: Consistent host-side logging for parallel checkpoints
+                <div data-csl-entry-id="chien2026paralog" class="csl-entry">
+                  <div class="csl-left-margin">[1]</div><div class="csl-right-inline">S. W. D. Chien, “ParaLog: Consistent host-side logging for parallel checkpoints,” The SCOttish Networking Event (SCONE), Glasgow, United Kingdom, Jan 2026.</div>
+                </div>
                 <div data-csl-entry-id="chien2025xo" class="csl-entry">
-                  <div class="csl-left-margin">[1]</div><div class="csl-right-inline">S. W. D. Chien, “Remote TCP Connection Offload with XO,” Ninth Annual UK System Research Challenges Workshop, County Durham, United Kingdom, 2025.</div>
+                  <div class="csl-left-margin">[2]</div><div class="csl-right-inline">S. W. D. Chien, “Remote TCP Connection Offload with XO,” Ninth Annual UK System Research Challenges Workshop, County Durham, United Kingdom, 2025.</div>
                 </div>
                 <div data-csl-entry-id="chien2025remote" class="csl-entry">
-                  <div class="csl-left-margin">[2]</div><div class="csl-right-inline">S. W. D. Chien, “Remote TCP Connection Offload,” NetDev conference 0x19, Zagreb, Croatia, 2025.</div>
+                  <div class="csl-left-margin">[3]</div><div class="csl-right-inline">S. W. D. Chien, “Remote TCP Connection Offload,” NetDev conference 0x19, Zagreb, Croatia, 2025.</div>
                 </div>
                 <div data-csl-entry-id="chien2021accel" class="csl-entry">
-                  <div class="csl-left-margin">[3]</div><div class="csl-right-inline">S. W. D. Chien, “Accelerating I/O for Traditional HPC and Modern ML Workloads on Emerging HPC Systems,” Doctoral Showcase, Supercomputing (SC), St. Louis, MO, USA. (Remotely due to COVID-19 restrictions), 2021.</div>
+                  <div class="csl-left-margin">[4]</div><div class="csl-right-inline">S. W. D. Chien, “Accelerating I/O for Traditional HPC and Modern ML Workloads on Emerging HPC Systems,” Doctoral Showcase, Supercomputing (SC), St. Louis, MO, USA. (Remotely due to COVID-19 restrictions), 2021.</div>
                 </div>
             </div>
         </div>
         <hr>
         <div id="teaching">
             <h2>Teaching</h2>
-            <p>In 2026 S2 I will be teaching in the following courses.<p>
+            <p>In 2026 S2, I will be teaching in the following courses.<p>
             <ul>
                 <li>CS3102: Data Communications and Networks</li>
                 <li>CS4203: Computer Security</li>
@@ -249,6 +253,7 @@
                 <li>DD2358: Introduction to High Performance Computing (lead TA): Tutorials that I helped create can be found <a href="https://github.com/steven-chien/Scientific-Software-Tutorials" target="_blank">here</a>.</li>
                 <li>DD2360: Applied GPU Programming</li>
                 <li>DD2395: Computer Security</li>
+                <li><a href="https://www.pdc.kth.se/training/summer-school-1.749842" target="_blank">PDC Summer School</a>: an intensive summer course organized by the supercomputer center at KTH for computational scientists without a computer science background to learn high-performance computation and parallel programming. I was the TA in the course and gave tutorials and help sessions in both parallel computation and GPU programming.</li>
             </ul>
         </div>
         <hr>
@@ -281,14 +286,23 @@
         <hr>
         <div id="experiences">
             <h2>Experiences</h2>
-            <p>I was heavily involved in a number of European H2020 projects during my PhD:</p>
-            <ul>
-                <li><a href="https://doi.org/10.3030/671500" target="_blank">Percipient StorAGe for Exascale Data Centric Computing (SAGE)</a></li>
-                <li><a href="https://doi.org/10.3030/800999" target="_blank">Percipient StorAGe for Exascale Data Centric Computing2 (SAGE2)</a></li>
-                <li><a href="https://doi.org/10.3030/801039" target="_blank">Exascale Programming Models for Heterogeneous Systems (EPiGRAM-HS)</a></li>
-                <li><a href="https://doi.org/10.3030/800904" target="_blank">Visual Exploration and Sampling Toolkit for Extreme Computing (VESTEC)</a></li>
-            </ul>
-            <p>In 2020, I did a summer internship and was subsequently a visiting student at the RIKEN Center for Computational Science's <a href="https://www.hpbd.r-ccs.riken.jp/hpbd/en/" target="_blank">High Performance Big Data Team</a> lead by Dr. Kento Sato. Our collaboration resulted in a highly deployable and transparent distributed logging system, <i>ParaLog</i>. It accelerates MPI based scientific applications using local storage resources and unused storage network during computation, while ensuring inter-node crash consistency of remote files. The system reduces the end-to-end execution time of serveral scientific applciations on cloud HPC, large-scale HPC, and locally deployed clusters. It also enables directly use of cloud S3 object storage by MPI-IO, without using customized data format or file system level interposition (e.g., FUSE). Our work was published in <a href="https://doi.org/10.1145/3772052.3772212" target="_blank">SoCC 2025</a>.</p>
+            <div id="research-projects">
+                <h3>Research Projects</h3>
+                <p>I was heavily involved in a number of European H2020 projects during my PhD:</p>
+                <ul>
+                    <li><a href="https://doi.org/10.3030/671500" target="_blank">Percipient StorAGe for Exascale Data Centric Computing (SAGE)</a></li>
+                    <li><a href="https://doi.org/10.3030/800999" target="_blank">Percipient StorAGe for Exascale Data Centric Computing2 (SAGE2)</a></li>
+                    <li><a href="https://doi.org/10.3030/801039" target="_blank">Exascale Programming Models for Heterogeneous Systems (EPiGRAM-HS)</a></li>
+                    <li><a href="https://doi.org/10.3030/800904" target="_blank">Visual Exploration and Sampling Toolkit for Extreme Computing (VESTEC)</a></li>
+                </ul>
+                <p>In 2020, I did a summer internship and was subsequently a visiting student at the RIKEN Center for Computational Science's <a href="https://www.hpbd.r-ccs.riken.jp/hpbd/en/" target="_blank">High Performance Big Data Team</a> led by Dr. Kento Sato. Our collaboration resulted in a highly deployable and transparent distributed logging system, <i>ParaLog</i>. It accelerates MPI-based scientific applications using local storage resources and unused storage network during computation, while ensuring inter-node crash consistency of remote files. The system reduces the end-to-end execution time of several scientific applications on cloud HPC, large-scale HPC, and locally deployed clusters. It also enables directly use of cloud S3 object storage by MPI-IO, without using a customized data format or file system level interposition (e.g., FUSE). Our work was published in <a href="https://doi.org/10.1145/3772052.3772212" target="_blank">SoCC 2025</a>.</p>
+            </div>
+            <div id="volunteer">
+                <h3>Volunteering, Outreach, and Awards</h3>
+                <p>Since 2018, I have been a board member of Python Sweden, which organizes <a href="https://pycon.se" target="_blank">PyCon Sverige</a>, the large Python event in the Nordics.</p>
+                <p>I won the best paper award at the 2018 AsHES workshop in IPDPS, where I co-authored a paper that characterized Nvidia Tensor Core.</p>
+                <p>I won the Ultrahack 2017 Open Category in Helsinki, Finland, and the 2017 East Sweden Hackathon Best Project Award in Linköping, Sweden</p>
+            </div>
         </div>
         <hr>
         <div id="contact">
