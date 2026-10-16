@@ -55,7 +55,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#contestant-profile" id="toc-contestant-profile" class="nav-link active" data-scroll-target="#contestant-profile">Contestant profile</a></li>
   <li><a href="#location" id="toc-location" class="nav-link" data-scroll-target="#location">Location</a></li>
   <li><a href="#arrival-and-timetable" id="toc-arrival-and-timetable" class="nav-link" data-scroll-target="#arrival-and-timetable">Arrival and timetable</a></li>
-  <li><a href="#computer" id="toc-computer" class="nav-link" data-scroll-target="#computer">Computer</a></li>
+  <li><a href="#computer" id="toc-computer" class="nav-link" data-scroll-target="#computer">Computer</a>
+  <ul class="collapse">
+  <li><a href="#environment" id="toc-environment" class="nav-link" data-scroll-target="#environment">Environment</a></li>
+  <li><a href="#contest-judging-system" id="toc-contest-judging-system" class="nav-link" data-scroll-target="#contest-judging-system">Contest judging system</a></li>
+  </ul></li>
   <li><a href="#during-competition" id="toc-during-competition" class="nav-link" data-scroll-target="#during-competition">During competition</a></li>
   <li><a href="#food-and-drinks" id="toc-food-and-drinks" class="nav-link" data-scroll-target="#food-and-drinks">Food and drinks</a></li>
   <li><a href="#miscellaneous" id="toc-miscellaneous" class="nav-link" data-scroll-target="#miscellaneous">Miscellaneous</a></li>
@@ -85,23 +89,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Here are some practical information for the UKIEPC 2026 at St Andrews site. Please read carefully, especially if you are not from St Andrews/CS.</p>
-<section id="contestant-profile" class="level2">
-<h2 class="anchored" data-anchor-id="contestant-profile">Contestant profile</h2>
+<section id="contestant-profile" class="level1">
+<h1>Contestant profile</h1>
 <p>A number of you have incomplete registration on ICPC. Please check your account again and <strong>make sure all information is filled in</strong>.</p>
 </section>
-<section id="location" class="level2">
-<h2 class="anchored" data-anchor-id="location">Location</h2>
+<section id="location" class="level1">
+<h1>Location</h1>
 <p>The site will be at JH110. If you are not from St Andrews/CS, map: <a href="https://www.st-andrews.ac.uk/roomBookingView/index/210-A_00_JH110">here</a>, and there will be marked signs on the day. If you are coming from Dundee/Leuchars, the closest bus stop is Old Course Hotel.</p>
 </section>
-<section id="arrival-and-timetable" class="level2">
-<h2 class="anchored" data-anchor-id="arrival-and-timetable">Arrival and timetable</h2>
-<p>The schedule can be found <a href="https://ukiepc.info/2026/">here</a>. You can arrive from around 10.00 to set up your computer. The contest starts at 11.00. You should ideally be here before 10.30, when the introduction live broadcast starts, and at 10.45 at the very latest. When you arrive, find yourself an area with a single screen (the front rows). Avoid the left side of the lab because there are no available power sockets.</p>
-<p>We will ask for your team name and give you a paper strip with your password to log in to the contest website. We will also give out the problem set. <strong>You must not open the problem set until we announced so (around 11.00)</strong>. If you prefer, you can download a digital copy from the contest site once it is online.</p>
-<p>We will have a scoreboard display and live broadcast from other sites in the room, but that freezes at 15:00. The contest finishes at 16:00. We will then follow a live broadcast of the results.</p>
+<section id="arrival-and-timetable" class="level1">
+<h1>Arrival and timetable</h1>
+<p>The schedule can be found <a href="https://ukiepc.info/2026/">here</a>. You can arrive from around 10.00 to set up your computer. The contest starts at 11.00. You should ideally be here before 10.30, when the introduction live broadcast starts, and <strong>at 10.45 at the very latest</strong>. When you arrive, find yourself an area with a single screen (the front rows). Avoid the left side of the lab because there are no available power sockets.</p>
+<p>You will be asked your team name and be given a paper strip with your password to log in to the contest website. This should only be shared with those in your team who have arrived at the site.</p>
+<p>We will also give out the problem set. <strong>You must not open the problem set until we announced so (around 11.00)</strong>. If you prefer, you can download a digital copy from the contest site once it is online.</p>
+<p>A scoreboard will be displayed in the room with live broadcast from other sites in the room, but that freezes at 15:00. The contest finishes at 16:00. We will then follow a live broadcast of the results.</p>
 </section>
-<section id="computer" class="level2">
-<h2 class="anchored" data-anchor-id="computer">Computer</h2>
-<p>You need to <strong>bring your own laptop</strong> so you can configure your environment to your preference. The official languages/compilers are the following:</p>
+<section id="computer" class="level1">
+<h1>Computer</h1>
+<p>You need to <strong>bring your own laptop</strong> so you can configure your environment to your preference. The rule is simple: only one screen per team. You can connect your laptop to the lab-provided screen, but turn the laptop screen off in that case. Please do not unplug any cables; there is an HDMI cable provided for that. Power sockets (on power bars) are available on each table. Please <strong>do not use any sockets that are marked “DO NOT USE”</strong>.</p>
+<p>You can use the computer only for editing, compiling, and debugging programs that you wrote after the start of the contest. You can’t bring any prepared source-code files. <strong>You can’t use the Internet except to access the contest website.</strong></p>
+<section id="environment" class="level2">
+<h2 class="anchored" data-anchor-id="environment">Environment</h2>
+<p>The official languages/compilers are the following:</p>
 <ul>
 <li>Python 3.9.18 (PyPy 7.3.15, with GCC 13.2.0),</li>
 <li>Java 21 (javac 21.0.4),</li>
@@ -110,28 +119,35 @@ ul.task-list li input[type="checkbox"] {
 <li>Kotlin 1.9.10, and</li>
 <li>Rust 1.75.0</li>
 </ul>
-<p>The rule is simple: only one screen per team. You can connect your laptop to the lab-provided screen, but turn the laptop screen off in that case. Please do not unplug any cables; there is an HDMI cable provided for that. Power sockets (on power bars) are available on each table. Please <strong>do not use any sockets that are marked “DO NOT USE”</strong>.</p>
 <p>If you are from St Andrews CS, you can choose to use the (single screen) workstation instead (<strong>P.s. I have not tested the environment!</strong>).</p>
-<p>You can use the computer only for editing, compiling, and debugging programs that you wrote after the start of the contest. You can’t bring any prepared source-code files. You can’t use the Internet except to access the contest website.</p>
 </section>
-<section id="during-competition" class="level2">
-<h2 class="anchored" data-anchor-id="during-competition">During competition</h2>
+<section id="contest-judging-system" class="level2">
+<h2 class="anchored" data-anchor-id="contest-judging-system">Contest judging system</h2>
+<ul>
+<li>At least one contestant should sign in to <a href="https://ukiepc26.kattis.com">https://ukiepc26.kattis.com</a> with the icpc.global email address that contestant registered with - we recommend they try this today.</li>
+<li>On arrival, press ‘check in to your team’ - and you should enter the code that site hosts will have given you.</li>
+<li>You will then be shown as having arrived/checked in on the server.</li>
+</ul>
+</section>
+</section>
+<section id="during-competition" class="level1">
+<h1>During competition</h1>
 <ul>
 <li>No AI tools (LLMs, ChatGPT, Copilot, etc.) are allowed, so be aware that any such IDE/plugins must be disabled.</li>
 <li>Any form of electronic notes is not allowed (except the problem set downloaded from the contest site), but you can bring as many paper books, printouts, and paper notes as you want.</li>
 <li>Feel free to write on the problem sheets; we will provide more paper if needed.</li>
 <li>No talking between teams.</li>
-<li>Be nice</li>
+<li>Be nice.</li>
 <li><strong>Obviously, no cheating. We trust you!</strong></li>
 </ul>
 </section>
-<section id="food-and-drinks" class="level2">
-<h2 class="anchored" data-anchor-id="food-and-drinks">Food and drinks</h2>
+<section id="food-and-drinks" class="level1">
+<h1>Food and drinks</h1>
 <p>Feel free to bring snacks; <strong>please keep the room clean and tidy</strong>. There is a drinking water machine just outside the room; bring your own cup/bottle if possible.</p>
 <p>Remember to drink water (and not only coffee…). We might order pizza for lunch; I’m working on it…</p>
 </section>
-<section id="miscellaneous" class="level2">
-<h2 class="anchored" data-anchor-id="miscellaneous">Miscellaneous</h2>
+<section id="miscellaneous" class="level1">
+<h1>Miscellaneous</h1>
 <ul>
 <li>Toilets are on the opposite side of the room and will be signposted.<br>
 </li>
